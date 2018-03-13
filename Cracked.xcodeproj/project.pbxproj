@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		15A4C67620587F450046BFF1 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 15A4C67520587F450046BFF1 /* main.cpp */; };
+		15A4C68420587FE50046BFF1 /* Decrypter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 15A4C67C20587FE50046BFF1 /* Decrypter.cpp */; };
+		15A4C68520587FE50046BFF1 /* Tokenizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 15A4C67F20587FE50046BFF1 /* Tokenizer.cpp */; };
+		15A4C68620587FE50046BFF1 /* Translator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 15A4C68020587FE50046BFF1 /* Translator.cpp */; };
+		15A4C68720587FE50046BFF1 /* WordList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 15A4C68220587FE50046BFF1 /* WordList.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +29,14 @@
 /* Begin PBXFileReference section */
 		15A4C67220587F450046BFF1 /* Cracked */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Cracked; sourceTree = BUILT_PRODUCTS_DIR; };
 		15A4C67520587F450046BFF1 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		15A4C67C20587FE50046BFF1 /* Decrypter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Decrypter.cpp; sourceTree = "<group>"; };
+		15A4C67D20587FE50046BFF1 /* provided.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = provided.h; sourceTree = "<group>"; };
+		15A4C67E20587FE50046BFF1 /* substituteMyHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = substituteMyHash.h; sourceTree = "<group>"; };
+		15A4C67F20587FE50046BFF1 /* Tokenizer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Tokenizer.cpp; sourceTree = "<group>"; };
+		15A4C68020587FE50046BFF1 /* Translator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Translator.cpp; sourceTree = "<group>"; };
+		15A4C68120587FE50046BFF1 /* MyHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyHash.h; sourceTree = "<group>"; };
+		15A4C68220587FE50046BFF1 /* WordList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WordList.cpp; sourceTree = "<group>"; };
+		15A4C68320587FE50046BFF1 /* wordlist.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wordlist.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +69,14 @@
 		15A4C67420587F450046BFF1 /* Cracked */ = {
 			isa = PBXGroup;
 			children = (
+				15A4C67C20587FE50046BFF1 /* Decrypter.cpp */,
+				15A4C68120587FE50046BFF1 /* MyHash.h */,
+				15A4C67D20587FE50046BFF1 /* provided.h */,
+				15A4C67E20587FE50046BFF1 /* substituteMyHash.h */,
+				15A4C67F20587FE50046BFF1 /* Tokenizer.cpp */,
+				15A4C68020587FE50046BFF1 /* Translator.cpp */,
+				15A4C68220587FE50046BFF1 /* WordList.cpp */,
+				15A4C68320587FE50046BFF1 /* wordlist.txt */,
 				15A4C67520587F450046BFF1 /* main.cpp */,
 			);
 			path = Cracked;
@@ -119,7 +139,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15A4C68520587FE50046BFF1 /* Tokenizer.cpp in Sources */,
+				15A4C68620587FE50046BFF1 /* Translator.cpp in Sources */,
+				15A4C68420587FE50046BFF1 /* Decrypter.cpp in Sources */,
 				15A4C67620587F450046BFF1 /* main.cpp in Sources */,
+				15A4C68720587FE50046BFF1 /* WordList.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
