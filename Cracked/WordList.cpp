@@ -15,10 +15,10 @@ public:
     bool contains(string word) const;
     vector<string> findCandidates(string cipherWord, string currTranslation) const;
 private:
-    bool addToMap(string input);
+    bool addToMaps(string input);
     
-    MyHash<string, int> m_wordList;
-    MyHash<string, int> m_patternList;
+    MyHash<string, string> m_wordToPattern;
+    MyHash<string, vector<string>> m_patternToWord;
 };
 
 /**
@@ -27,20 +27,26 @@ private:
  */
 bool WordListImpl::loadWordList(string filename)
 {
-    m_wordList.reset();
+    m_wordToPattern.reset();
+    m_patternToWord.reset();
+    
     ifstream infile("wordlist.txt");
     if (!infile) return false; // failed to open file
     string s;
     while (getline(infile, s)) {
+        bool isValid = true;
         for (int i = 0; i < s.size(); i++) {
-            if (s[i] != '\'' || !isalpha(s[i])) {
-                break; // move on to the next line if word contains non alpha/non apostrophe
+            if (s[i] != '\'' && !isalpha(s[i])) { // move on to the next line if word contains non alpha/non apostrophe
+                isValid = false;
+                break;
             }
+        }
+        if (isValid) {
             
         }
     }
     
-    return false;  // This compiles, but may not be correct
+    return true;  // This compiles, but may not be correct
 }
 
 bool WordListImpl::contains(string word) const
@@ -55,7 +61,7 @@ vector<string> WordListImpl::findCandidates(string cipherWord, string currTransl
 
 // Private member functions
 
-bool WordListImpl::addToMap(string s) {
+bool WordListImpl::addToMaps(string s) {
     for (int i = 0; i < s.size(); i++) {
         if (s[i] != '\'' || !isalpha(s[i])) {
             return false; // move on to the next line if word contains non alpha/non apostrophe
