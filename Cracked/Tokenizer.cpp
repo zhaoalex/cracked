@@ -9,15 +9,57 @@ public:
     TokenizerImpl(string separators);
     vector<string> tokenize(const string& s) const;
 private:
+    bool isSeparator(char c) const;
+    
+    vector<char> sepArr;
 };
 
+/**
+ * Initalizes a new Tokenizer object.
+ * @runtime O(P), P = number of separators
+ */
 TokenizerImpl::TokenizerImpl(string separators)
 {
+    for (int i = 0; i < separators.size(); i++) { // loop P times
+        sepArr.push_back(separators[i]); // push_back is O(1) amortized
+    }
 }
 
+/**
+ * Split s into token strings based on the separators provided in the constructor.
+ * @return vector of strings.
+ * @runtime O(SP), S = number of characters, P = number of separators
+ */
 vector<string> TokenizerImpl::tokenize(const string& s) const
 {
-    return vector<string>();  // This compiles, but may not be correct
+    vector<string> tokens;
+    int i = 0;
+    while (i < s.size()) { // will only loop through each character in the string once
+        int begIndex = i;
+        while (!isSeparator(s[i]) && i < s.size()) { // loop until we hit a seperator or the end of the string
+            i++;
+        }
+        int endIndex = i;
+        if (begIndex == endIndex) { // i.e. the only character was a separator
+            i++;
+            continue; // so we ignore it and move to the next character
+        }
+        tokens.push_back(s.substr(begIndex, endIndex - begIndex));
+    }
+    return tokens;
+}
+
+// Private helper functions
+
+/**
+ * Returns true if the character is a separator.
+ * @runtime O(P), P = number of separators
+ */
+bool TokenizerImpl::isSeparator(char c) const {
+    for (int i = 0; i < sepArr.size(); i++) {
+        if (c == sepArr[i]) return true;
+    }
+    return false;
 }
 
 //******************** Tokenizer functions ************************************

@@ -1,6 +1,11 @@
 #include "provided.h"
+#include "substituteMyHash.h" // TODO replace
 #include <string>
 #include <vector>
+#include <sstream>
+#include <iostream>
+#include <fstream>
+#include <cctype>
 using namespace std;
 
 class WordListImpl
@@ -10,10 +15,30 @@ public:
     bool contains(string word) const;
     vector<string> findCandidates(string cipherWord, string currTranslation) const;
 private:
+    bool addToMap(string input);
+    
+    MyHash<string, int> wordMap;
 };
 
+/**
+ * Loads the word list from the file.
+ * @runtime O(W), W = number of words. (looping through each character in each word is constant time)
+ */
 bool WordListImpl::loadWordList(string filename)
 {
+    wordMap.reset();
+    ifstream infile("wordlist.txt");
+    if (!infile) return false; // failed to open file
+    string s;
+    while (getline(infile, s)) {
+        for (int i = 0; i < s.size(); i++) {
+            if (s[i] != '\'' || !isalpha(s[i])) {
+                break; // move on to the next line if word contains non alpha/non apostrophe
+            }
+            
+        }
+    }
+    
     return false;  // This compiles, but may not be correct
 }
 
@@ -26,6 +51,17 @@ vector<string> WordListImpl::findCandidates(string cipherWord, string currTransl
 {
     return vector<string>();  // This compiles, but may not be correct
 }
+
+// Private member functions
+
+bool WordListImpl::addToMap(string s) {
+    for (int i = 0; i < s.size(); i++) {
+        if (s[i] != '\'' || !isalpha(s[i])) {
+            return false; // move on to the next line if word contains non alpha/non apostrophe
+        }
+    }
+}
+
 
 //***** hash functions for string, int, and char *****
 

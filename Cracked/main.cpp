@@ -42,6 +42,7 @@ bool decrypt(string ciphertext)
 	return true;
 }
 
+/*
 int main(int argc, char* argv[])
 {
 	if (argc == 3  &&  argv[1][0] == '-')
@@ -61,4 +62,13 @@ int main(int argc, char* argv[])
 	cout << "Usage to encrypt:  " << argv[0] << " -e \"Your message here.\"" << endl;
 	cout << "Usage to decrypt:  " << argv[0] << " -d \"Uwey tirrboi miyi.\"" << endl;
 	return 1;
+}
+*/
+
+int main() {
+    Tokenizer t(" ,.!");
+    vector<string> v = t.tokenize("...a");
+    for (int i = 0; i < v.size(); i++) {
+        cerr << v[i] << endl;
+    }
 }
