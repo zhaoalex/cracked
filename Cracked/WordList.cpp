@@ -1,5 +1,5 @@
 #include "provided.h"
-#include "substituteMyHash.h" // TODO replace
+#include "MyHash.h"
 #include <string>
 #include <vector>
 #include <sstream>
@@ -17,7 +17,8 @@ public:
 private:
     bool addToMap(string input);
     
-    MyHash<string, int> wordMap;
+    MyHash<string, int> m_wordList;
+    MyHash<string, int> m_patternList;
 };
 
 /**
@@ -26,7 +27,7 @@ private:
  */
 bool WordListImpl::loadWordList(string filename)
 {
-    wordMap.reset();
+    m_wordList.reset();
     ifstream infile("wordlist.txt");
     if (!infile) return false; // failed to open file
     string s;
@@ -60,6 +61,10 @@ bool WordListImpl::addToMap(string s) {
             return false; // move on to the next line if word contains non alpha/non apostrophe
         }
     }
+    
+    
+    
+    return false;
 }
 
 

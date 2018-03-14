@@ -65,10 +65,25 @@ int main(int argc, char* argv[])
 }
 */
 
+/*
 int main() {
     Tokenizer t(" ,.!");
     vector<string> v = t.tokenize("...a");
     for (int i = 0; i < v.size(); i++) {
         cerr << v[i] << endl;
     }
+}
+*/
+
+#include "MyHash.h"
+
+int main() {
+    MyHash<string, int> test;
+    test.associate("1", 1);
+    test.associate("3", 3); // 2
+    
+    test.associate("2", 2);
+    
+    cout << *test.find("1") << endl << *test.find("3") << endl << *test.find("2") << endl;
+    
 }

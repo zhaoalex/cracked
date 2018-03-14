@@ -31,11 +31,11 @@
 		15A4C67520587F450046BFF1 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		15A4C67C20587FE50046BFF1 /* Decrypter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Decrypter.cpp; sourceTree = "<group>"; };
 		15A4C67D20587FE50046BFF1 /* provided.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = provided.h; sourceTree = "<group>"; };
-		15A4C67E20587FE50046BFF1 /* substituteMyHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = substituteMyHash.h; sourceTree = "<group>"; };
 		15A4C67F20587FE50046BFF1 /* Tokenizer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Tokenizer.cpp; sourceTree = "<group>"; };
 		15A4C68020587FE50046BFF1 /* Translator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Translator.cpp; sourceTree = "<group>"; };
 		15A4C68220587FE50046BFF1 /* WordList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WordList.cpp; sourceTree = "<group>"; };
 		15A4C68320587FE50046BFF1 /* wordlist.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wordlist.txt; sourceTree = "<group>"; };
+		15A4C6882058D4660046BFF1 /* MyHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyHash.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,9 +68,9 @@
 		15A4C67420587F450046BFF1 /* Cracked */ = {
 			isa = PBXGroup;
 			children = (
+				15A4C6882058D4660046BFF1 /* MyHash.h */,
 				15A4C67C20587FE50046BFF1 /* Decrypter.cpp */,
 				15A4C67D20587FE50046BFF1 /* provided.h */,
-				15A4C67E20587FE50046BFF1 /* substituteMyHash.h */,
 				15A4C67F20587FE50046BFF1 /* Tokenizer.cpp */,
 				15A4C68020587FE50046BFF1 /* Translator.cpp */,
 				15A4C68220587FE50046BFF1 /* WordList.cpp */,

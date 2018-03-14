@@ -11,7 +11,7 @@ public:
 private:
     bool isSeparator(char c) const;
     
-    vector<char> sepArr;
+    vector<char> m_sepArr;
 };
 
 /**
@@ -21,7 +21,7 @@ private:
 TokenizerImpl::TokenizerImpl(string separators)
 {
     for (int i = 0; i < separators.size(); i++) { // loop P times
-        sepArr.push_back(separators[i]); // push_back is O(1) amortized
+        m_sepArr.push_back(separators[i]); // push_back is O(1) amortized
     }
 }
 
@@ -56,8 +56,8 @@ vector<string> TokenizerImpl::tokenize(const string& s) const
  * @runtime O(P), P = number of separators
  */
 bool TokenizerImpl::isSeparator(char c) const {
-    for (int i = 0; i < sepArr.size(); i++) {
-        if (c == sepArr[i]) return true;
+    for (int i = 0; i < m_sepArr.size(); i++) {
+        if (c == m_sepArr[i]) return true;
     }
     return false;
 }
