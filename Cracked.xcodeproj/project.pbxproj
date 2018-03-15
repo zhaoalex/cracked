@@ -27,6 +27,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		151DB89F205A7EED005C3B3F /* substituteMyHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = substituteMyHash.h; sourceTree = "<group>"; };
 		15A4C67220587F450046BFF1 /* Cracked */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Cracked; sourceTree = BUILT_PRODUCTS_DIR; };
 		15A4C67520587F450046BFF1 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		15A4C67C20587FE50046BFF1 /* Decrypter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Decrypter.cpp; sourceTree = "<group>"; };
@@ -68,6 +69,7 @@
 		15A4C67420587F450046BFF1 /* Cracked */ = {
 			isa = PBXGroup;
 			children = (
+				151DB89F205A7EED005C3B3F /* substituteMyHash.h */,
 				15A4C6882058D4660046BFF1 /* MyHash.h */,
 				15A4C67C20587FE50046BFF1 /* Decrypter.cpp */,
 				15A4C67D20587FE50046BFF1 /* provided.h */,

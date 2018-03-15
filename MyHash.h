@@ -146,9 +146,8 @@ void MyHash<KeyType, ValueType>::cleanup() {
     // delete all linked lists in each bucket
     for (int i = 0; i < m_numBuckets; i++) { // O(B)
         Node* cur = m_hashTable[i];
-        Node* next;
         while (cur != nullptr) { // O(1) assuming relatively distributed hash table
-            next = cur->next;
+            Node* next = cur->next;
             delete cur;
             cur = next;
         }

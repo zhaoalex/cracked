@@ -75,6 +75,7 @@ int main() {
 }
 */
 
+/*
 #include "MyHash.h"
 
 int main() {
@@ -87,3 +88,61 @@ int main() {
     cout << *test.find("1") << endl << *test.find("3") << endl << *test.find("2") << endl;
     
 }
+*/
+
+/*
+string c(string s) {
+    char patternCounter = 'A'; // will keep track of which letters to associate
+    for (int i = 0; i < s.size(); i++) {
+        char currentChar = s[i];
+        
+        // ignore apostrophes and uppercase letters
+        // (we guarantee that the input will be lowercase)
+        if (currentChar == '\'' || isupper(currentChar)) continue;
+        
+        if (currentChar == '\'') continue; // ignore apostrophes
+        for (int j = 0; j < s.size(); j++) {
+            if (s[j] == currentChar) {
+                s[j] = patternCounter;
+            }
+        }
+        patternCounter++;
+    }
+    return s;
+}
+
+int main() {
+    string s = "google";
+    cout << c(s);
+}
+ */
+
+void f()
+{
+    WordList wl;
+    if ( ! wl.loadWordList("wordlist.txt"))
+    {
+        cout << "Unable to load word list" << endl;
+        return;
+    }
+    if (wl.contains("onomatopoeia"))
+        cout << "I found onomatopoeia!" << endl;
+    else
+        cout << "Onomatopoeia is not in the word list!" << endl;
+    string cipher = "xyqbbq";
+    string decodedSoFar = "?r????";
+    vector<string> v = wl.findCandidates(cipher, decodedSoFar);
+    if (v.empty())
+        cout << "No matches found" << endl;
+    else
+    {
+        cout << "Found these matches:" << endl;
+        for (size_t k = 0; k < v.size(); k++)
+            cout << v[k] << endl; // writes grotto and troppo
+    }
+}
+
+int main() {
+    f();
+}
+    
