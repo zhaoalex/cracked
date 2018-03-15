@@ -116,7 +116,7 @@ int main() {
     cout << c(s);
 }
  */
-/*
+
 void f()
 {
     WordList wl;
@@ -142,10 +142,6 @@ void f()
     }
 }
 
-int main() {
-    f();
-}
- */
 
 /*
 void f()
@@ -203,6 +199,7 @@ void f()
 }
 */
 
+/*
 void f()
 {
     Translator t;
@@ -215,8 +212,14 @@ void f()
     if ( ! t.pushMapping("H", "S")) // HàS
         cout << "H would map to both R and S!" << endl;
 }
+ */
 
+/*
 int main() {
     f();
 }
-    
+    */
+
+int main() {
+    cout << encrypt("Please encrypt this message for me!!") << endl;
+}

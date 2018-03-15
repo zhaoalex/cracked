@@ -1,6 +1,6 @@
 #include "provided.h"
-// #include "MyHash.h" TODO CHANGE
-#include "substituteMyHash.h"
+#include "MyHash.h"
+// #include "substituteMyHash.h"
 #include <string>
 #include <vector>
 #include <sstream>
@@ -33,7 +33,8 @@ bool WordListImpl::loadWordList(string filename)
     m_wordToPattern.reset();
     m_patternToWord.reset();
     
-    ifstream infile("/Users/alexzhao/Documents/wordlist.txt");
+    //ifstream infile("/Users/alexzhao/Documents/wordlist.txt");
+    ifstream infile(filename);
     if (!infile) return false; // failed to open file
     string s;
     while (getline(infile, s)) { // O(W)

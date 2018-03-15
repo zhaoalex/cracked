@@ -31,6 +31,8 @@ bool TranslatorImpl::pushMapping(string ciphertext, string plaintext)
     for (int i = 0; i < ciphertext.size(); i++) { // O(N)
         if (!isalpha(ciphertext[i]) || !isalpha(plaintext[i])) return false; // if not letter, return false
         
+        if (tempMap[ciphertext[i] - 'A'] == plaintext[i]) continue; // if same letter, ignore and move on
+        
         // convert both strings to uppercase
         ciphertext[i] = toupper(ciphertext[i]);
         plaintext[i] = toupper(plaintext[i]);

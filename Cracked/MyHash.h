@@ -190,7 +190,7 @@ ValueType* MyHash<KeyType, ValueType>::findInTable(Node** table, const KeyType& 
     if (table[h] == nullptr) return nullptr;
     Node* p = table[h];
     while (p != nullptr) { // otherwise loop through the linked list: technically O(X) but not really
-        if (p->key == key) return &p->value; // if we find the key, return the value
+        if (p->key == key) return &(p->value); // if we find the key, return the value
         p = p->next;
     }
     return nullptr; // if we didn't find the key, return nullptr
