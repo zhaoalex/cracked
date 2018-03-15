@@ -116,7 +116,7 @@ int main() {
     cout << c(s);
 }
  */
-
+/*
 void f()
 {
     WordList wl;
@@ -140,6 +140,80 @@ void f()
         for (size_t k = 0; k < v.size(); k++)
             cout << v[k] << endl; // writes grotto and troppo
     }
+}
+
+int main() {
+    f();
+}
+ */
+
+/*
+void f()
+{
+    Translator t; // Define a translator object
+    string secret = "Hdqlx!";
+    string translated = t.getTranslation(secret);
+    cout << "The translated message is: " << translated;
+    // writes The translated message is: ?????!
+}
+ */
+
+/*
+void f()
+{
+    Translator t;
+    // Submit the mapping DàE, HàR, LàD
+    t.pushMapping("DHL", "ERD");
+    string secret = "Hdqlx!";
+    cout << t.getTranslation(secret) << endl; // writes Re?d?!
+}
+ */
+
+/*
+void f()
+{
+    Translator t;
+    // Submit the first collection of character mappings
+    t.pushMapping("DHL", "ERD"); // DàE, HàR, LàD
+    string secret = "Hdqlx!";
+    cout << t.getTranslation(secret) << endl; // writes Re?d?!
+    // Submit a second collection of character mappings
+    t.pushMapping("QX", "AY"); // QàA, XàY
+    cout << t.getTranslation(secret) << endl; // writes Ready!
+}
+ */
+
+/*
+void f()
+{
+    Translator t;
+    // Submit the first collection of mappings
+    t.pushMapping("DHL", "ERD"); // DàE, HàR, LàD
+    string secret = "Hdqlx!";
+    cout << t.getTranslation(secret) << endl; // writes Re?d?!
+    // Submit a second collection of mappings
+    t.pushMapping("QX", "AY"); // QàA, XàY
+    cout << t.getTranslation(secret) << endl; // writes Ready!
+    // Pop the most recently pushed collection
+    t.popMapping();
+    cout << t.getTranslation(secret) << endl; // writes Re?d?!
+    // Pop again
+    t.popMapping();
+    cout << t.getTranslation(secret) << endl; // writes ?????!
+}
+*/
+
+void f()
+{
+    Translator t;
+    t.pushMapping("DHL", "ERD"); // DàE, HàR, LàD
+    if ( ! t.pushMapping("QX", "RY")) // QàR, XàY
+        cout << "Both H and Q would map to R!" << endl;
+    // The current mapping is still DàE, HàR, LàD with no
+    // mapping for Q or X
+    cout << t.getTranslation("HDX") << endl; // writes RE?
+    if ( ! t.pushMapping("H", "S")) // HàS
+        cout << "H would map to both R and S!" << endl;
 }
 
 int main() {
