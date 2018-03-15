@@ -9,7 +9,7 @@
 #include <numeric>
 using namespace std;
 
-const string WORDLIST_FILE = "wordlist.txt";
+const string WORDLIST_FILE = "/Users/alexzhao/Documents/wordlist.txt";
 
 string encrypt(string plaintext)
 {
@@ -221,5 +221,12 @@ int main() {
     */
 
 int main() {
-    cout << encrypt("Please encrypt this message for me!!") << endl;
+    //cout << encrypt("Please encrypt this message for me!!") << endl;
+    //decrypt("y qook ra bdttook yqkook.");
+    //decrypt("Vxgvab sovi jh pjhk cevc andi ngh iobnxdcjnh cn bdttook jb pnio jpfnicvhc cevh vha nceoi nho cejhy.");
+    //decrypt("Lzdkgd dyrmjls shcg xdggkud fpm xd!!");
+    //decrypt("Trcy oyc koon oz rweelycbb vmobcb, wyogrcn oecyb; hjg ozgcy tc moox bo moya wg grc vmobck koon grwg tc ko yog bcc grc oyc trlvr rwb hccy oecyck zon jb. -Rcmcy Xcmmcn");
+    //decrypt("Jxwpjq qwrla glcu pcx qcn xkvv dw uclw ekarbbckpjwe dq jzw jzkpta jzrj qcn ekep'j ec jzrp dq jzw cpwa qcn eke ec. -Urls Jxrkp");
+    //decrypt("Xjzwq gjz cuvq xz huri arwqvudiy fuk ufjrqoq svquxiy. -Lzjk Nqkkqcy");
+    decrypt("Axevfvu lvnelvp bxqp mvpprjv rgl bvoop Grnxvgkvuj dqupb jvbp buvrbvl be lqggvu.");
 }

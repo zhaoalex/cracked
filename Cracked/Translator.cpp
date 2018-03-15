@@ -29,13 +29,13 @@ bool TranslatorImpl::pushMapping(string ciphertext, string plaintext)
     string tempMap = m_map;
     
     for (int i = 0; i < ciphertext.size(); i++) { // O(N)
-        if (!isalpha(ciphertext[i]) || !isalpha(plaintext[i])) return false; // if not letter, return false
-        
-        if (tempMap[ciphertext[i] - 'A'] == plaintext[i]) continue; // if same letter, ignore and move on
+        if (!isalpha(ciphertext[i]) || !isalpha(plaintext[i])) return false; // if not letter, return false.
         
         // convert both strings to uppercase
         ciphertext[i] = toupper(ciphertext[i]);
         plaintext[i] = toupper(plaintext[i]);
+        
+        if (tempMap[ciphertext[i] - 'A'] == plaintext[i]) continue; // if same pairing already exists, ignore and move on
         
         if (tempMap[ciphertext[i] - 'A'] != '?') return false; // if one ciphertext maps to two plaintexts, return false (this is inconsistent)
         
