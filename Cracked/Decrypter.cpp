@@ -2,7 +2,7 @@
 #include <string>
 #include <vector>
 #include <set>
-#include <iostream> // TODO
+#include <algorithm>
 using namespace std;
 
 class DecrypterImpl
@@ -11,7 +11,7 @@ public:
     bool load(string filename);
     vector<string> crack(const string& ciphertext);
 private:
-    void crackHelper(Translator* mapping, Tokenizer* tk, vector<string>* tokens, string ciphertext, set<string>* possibilities);
+    void crackHelper(Translator* mapping, Tokenizer* tk, vector<string>* tokens, string ciphertext, vector<string>* possibilities);
     int getMostUntranslated(Translator* tl, const vector<string>* tokens) const;
     bool isFullyTranslated(const string& s) const;
 
@@ -43,30 +43,21 @@ vector<string> DecrypterImpl::crack(const string& ciphertext)
     Tokenizer tk("0123456789 ,;:.!()[]{}-\"#$%^&");
     vector<string> tokens = tk.tokenize(ciphertext);
     
-    set<string> possiblities;
+    vector<string> possiblities;
     
     crackHelper(&tl, &tk, &tokens, ciphertext, &possiblities);
     
-    return vector<string>(possiblities.begin(), possiblities.end());  // This compiles, but may not be correct
+    sort(possiblities.begin(), possiblities.end());
+    
+    return possiblities;
 }
 
-void DecrypterImpl::crackHelper(Translator* mapping, Tokenizer* tk, vector<string>* tokens, string ciphertext, set<string>* possibilities) {
+void DecrypterImpl::crackHelper(Translator* mapping, Tokenizer* tk, vector<string>* tokens, string ciphertext, vector<string>* possibilities) {
     
     // Step 2 cont. TODO put this in main fcn?
     int cipherIndex = getMostUntranslated(mapping, tokens);
     
-    //if (cipherIndex == -1) return;
-    
     string cipherWord = (*tokens)[cipherIndex];
-    
-    /*
-    // after we get the most untranslated word, delete it from tokens
-    vector<string>::iterator it = tokens->begin();
-    for (int i = 0; i < cipherIndex; i++) {
-        it++;
-    }
-    tokens->erase(it);
-     */
 
     // Step 3: Translate encrypted word
     string currTranslation = mapping->getTranslation(cipherWord);
@@ -77,8 +68,7 @@ void DecrypterImpl::crackHelper(Translator* mapping, Tokenizer* tk, vector<strin
     // Step 5: If empty, return to previous recursive call
     if (candidates.empty()) {
         mapping->popMapping();
-        
-        return; // TODO ????????
+        return;
     }
     
     // Step 6
@@ -110,7 +100,7 @@ void DecrypterImpl::crackHelper(Translator* mapping, Tokenizer* tk, vector<strin
             mapping->popMapping();
             continue;
         } else if (strFullyTranslated) { // every word translated -> potential solution
-            possibilities->insert(newTranslation); // so record it
+            possibilities->push_back(newTranslation); // so record it
             mapping->popMapping();
             continue; // then move to the next candidate
         } else { // message not completely translated -> continue recursion

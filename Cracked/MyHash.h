@@ -16,21 +16,21 @@ public:
     void associate(const KeyType& key, const ValueType& value);
     int getNumItems() const;
     double getLoadFactor() const;
-
-      // for a map that can't be modified, return a pointer to const ValueType
+    
+    // for a map that can't be modified, return a pointer to const ValueType
     const ValueType* find(const KeyType& key) const;
-
-      // for a modifiable map, return a pointer to modifiable ValueType
+    
+    // for a modifiable map, return a pointer to modifiable ValueType
     ValueType* find(const KeyType& key)
     {
         return const_cast<ValueType*>(const_cast<const MyHash*>(this)->find(key));
     }
-
-      // C++11 syntax for preventing copying and assignment
+    
+    // C++11 syntax for preventing copying and assignment
     MyHash(const MyHash&) = delete;
     MyHash& operator=(const MyHash&) = delete;
-
-
+    
+    
 private:
     struct Node {
         KeyType key;
@@ -39,10 +39,7 @@ private:
     };
     
     void cleanup();
-    void reset(int buckets);
-    unsigned int getHashedNum(const KeyType& key) const;
-    ValueType* findInTable(Node** table, const KeyType& key) const;
-    void addToTable(Node** table, const KeyType& key, const ValueType& value);
+    unsigned int getHash(const KeyType& key) const;
     void reassociate();
     
     Node** m_hashTable;
@@ -67,7 +64,13 @@ MyHash<KeyType, ValueType>::MyHash(double maxLoadFactor) {
     }
     
     // if load factor > 2.0, set it to 2.0
-    m_maxLoadFactor = (maxLoadFactor > 2.0) ? 2.0 : maxLoadFactor;
+    if (maxLoadFactor <= 0) {
+        m_maxLoadFactor = 0.5;
+    } else if (maxLoadFactor > 2.0) {
+        m_maxLoadFactor = 2.0;
+    } else {
+        m_maxLoadFactor = maxLoadFactor;
+    }
 }
 
 /**
@@ -86,7 +89,15 @@ MyHash<KeyType, ValueType>::~MyHash() {
  */
 template<typename KeyType, typename ValueType>
 void MyHash<KeyType, ValueType>::reset() {
-    reset(100);
+    cleanup();
+    m_hashTable = new Node*[100];
+    
+    for (int i = 0; i < 100; i++) {
+        m_hashTable[i] = nullptr;
+    }
+    
+    m_numBuckets = 100;
+    m_numItems = 0;
 }
 
 /**
@@ -98,13 +109,26 @@ void MyHash<KeyType, ValueType>::reset() {
  */
 template<typename KeyType, typename ValueType>
 void MyHash<KeyType, ValueType>::associate(const KeyType& key, const ValueType& value) {
-    // check if this association will exceed the current load factor
-    if (1.0 * (m_numItems + 1) / m_numBuckets > m_maxLoadFactor) {
-        reassociate();
+    ValueType* v = find(key); // O(1)
+    if (v != nullptr) { // key was found; overwrite old value
+        *v = value;
+    } else { // key wasn't found; create new node
+        unsigned int h = getHash(key) % m_numBuckets;
+
+        Node* n = new Node;
+        n->key = key;
+        n->value = value;
+        n->next = m_hashTable[h];
+        m_hashTable[h] = n;
+        
+        m_numItems++;
     }
     
-    // we check reassociation first for a TINY (essentially negligible) time save
-    addToTable(m_hashTable, key, value);
+    // check if this association will exceed the current load factor
+    if (getLoadFactor() > m_maxLoadFactor) {
+        reassociate();
+    }
+
 }
 
 /**
@@ -115,7 +139,21 @@ void MyHash<KeyType, ValueType>::associate(const KeyType& key, const ValueType& 
  */
 template<typename KeyType, typename ValueType>
 const ValueType* MyHash<KeyType, ValueType>::find(const KeyType& key) const {
-    return findInTable(m_hashTable, key);
+    unsigned int h = getHash(key) % m_numBuckets;
+    
+    if (m_hashTable[h] == nullptr) { // if linked list not found
+        return nullptr;
+    } else { // found linked list; traverse
+        Node* p = m_hashTable[h];
+        while (p != nullptr) { // loop thru linked list: effectively O(1)
+            if (p->key == key) {
+                return &(p->value);
+            }
+            p = p->next;
+        }
+    }
+    
+    return nullptr; // not in the linked list
 }
 
 /**
@@ -132,7 +170,7 @@ int MyHash<KeyType, ValueType>::getNumItems() const {
  */
 template<typename KeyType, typename ValueType>
 double MyHash<KeyType, ValueType>::getLoadFactor() const {
-    return m_numItems / m_numBuckets;
+    return (m_numItems * 1.0) / m_numBuckets;
 }
 
 // Private member variables
@@ -145,11 +183,11 @@ template<typename KeyType, typename ValueType>
 void MyHash<KeyType, ValueType>::cleanup() {
     // delete all linked lists in each bucket
     for (int i = 0; i < m_numBuckets; i++) { // O(B)
-        Node* cur = m_hashTable[i];
-        while (cur != nullptr) { // O(1) assuming relatively distributed hash table
-            Node* next = cur->next;
-            delete cur;
-            cur = next;
+        Node* p = m_hashTable[i];
+        while (p != nullptr) { // O(1) assuming relatively distributed hash table
+            Node* next = p->next;
+            delete p;
+            p = next;
         }
     }
     
@@ -158,65 +196,13 @@ void MyHash<KeyType, ValueType>::cleanup() {
 }
 
 /**
- * Deletes current hash table and constructs a new one with specified number of buckets.
- */
-template<typename KeyType, typename ValueType>
-void MyHash<KeyType, ValueType>::reset(int buckets) {
-    cleanup();
-    m_hashTable = new Node*[buckets];
-    m_numBuckets = buckets;
-    m_numItems = 0;
-}
-
-/**
  * Given a key, return the hashed version of that key (modulo number of buckets).
  * @return hashed version of key
  */
 template<typename KeyType, typename ValueType>
-unsigned int MyHash<KeyType, ValueType>::getHashedNum(const KeyType& key) const {
+unsigned int MyHash<KeyType, ValueType>::getHash(const KeyType& key) const {
     unsigned int hash(const KeyType& k);
-    return hash(key) % m_numBuckets;
-}
-
-/**
- * Finds an item in the specified hash table with given key.
- * @runtime O(1)
- */
-template<typename KeyType, typename ValueType>
-ValueType* MyHash<KeyType, ValueType>::findInTable(Node** table, const KeyType& key) const {
-    unsigned int h = getHashedNum(key);
-    
-    // If hashed to an empty location in the table, return nullptr
-    if (table[h] == nullptr) return nullptr;
-    Node* p = table[h];
-    while (p != nullptr) { // otherwise loop through the linked list: technically O(X) but not really
-        if (p->key == key) return &(p->value); // if we find the key, return the value
-        p = p->next;
-    }
-    return nullptr; // if we didn't find the key, return nullptr
-}
-
-/**
- * Adds a key-value pairing to the given hash table.
- * @runtime O(1)
- */
-template<typename KeyType, typename ValueType>
-void MyHash<KeyType, ValueType>::addToTable(Node** table, const KeyType& key, const ValueType& value) {
-    ValueType* v = findInTable(table, key); // find() is also O(1)
-    if (v != nullptr) { // key was found; overwrite old value
-        *v = value;
-    } else { // key wasn't found; create new Node
-        unsigned int h = getHashedNum(key);
-        
-        Node* p = table[h]; // start of linked list
-        Node* newNode = new Node;
-        newNode->key = key;
-        newNode->value = value;
-        newNode->next = p; // add to start of linked list for time efficiency
-        table[h] = newNode;
-        
-        m_numItems++;
-    }
+    return hash(key);
 }
 
 /**
@@ -234,16 +220,20 @@ void MyHash<KeyType, ValueType>::reassociate() {
         tempTable[i] = nullptr; // initalize each bucket in the temp table to nullptr
     }
     
-    for (int i = 0; i < m_numBuckets; i++) { // O(B)
+    for (int i = 0; i < m_numBuckets; i++) { // O(B); copy over every node from old hash table
         Node* p = m_hashTable[i];
         while (p != nullptr) { // loop through each linked list: O(1) assuming even dist.
-            addToTable(tempTable, p->key, p->value); // O(1)
+            unsigned int h = getHash(p->key) % (m_numBuckets * 2);
+            
+            Node* newNode = new Node;
+            newNode->key = p->key;
+            newNode->value = p->value;
+            newNode->next = tempTable[h];
+            tempTable[h] = newNode;
+            
             p = p->next;
         }
     }
-    
-    // addToTable() still increments m_numItems, which means we need to divide by 2 to fix it
-    m_numItems /= 2;
     
     // destroy the original hash table and set it to our temp table
     cleanup();
@@ -254,3 +244,4 @@ void MyHash<KeyType, ValueType>::reassociate() {
 }
 
 #endif /* MYHASH_H */
+

@@ -7,6 +7,8 @@
 #include <random>
 #include <algorithm>
 #include <numeric>
+#include <cassert>
+#include "MyHash.h"
 using namespace std;
 
 const string WORDLIST_FILE = "/Users/alexzhao/Documents/wordlist.txt";
@@ -117,10 +119,11 @@ int main() {
 }
  */
 
+/*
 void f()
 {
     WordList wl;
-    if ( ! wl.loadWordList("wordlist.txt"))
+    if ( ! wl.loadWordList("/Users/alexzhao/Documents/wordlist.txt"))
     {
         cout << "Unable to load word list" << endl;
         return;
@@ -130,7 +133,7 @@ void f()
     else
         cout << "Onomatopoeia is not in the word list!" << endl;
     string cipher = "xyqbbq";
-    string decodedSoFar = "?r????";
+    string decodedSoFar = "??o??o";
     vector<string> v = wl.findCandidates(cipher, decodedSoFar);
     if (v.empty())
         cout << "No matches found" << endl;
@@ -141,7 +144,7 @@ void f()
             cout << v[k] << endl; // writes grotto and troppo
     }
 }
-
+*/
 
 /*
 void f()
@@ -218,15 +221,24 @@ void f()
 int main() {
     f();
 }
-    */
+ */
 
 int main() {
+    MyHash<int, string> m;
+    m.associate(222, "Ethel");
+    m.associate(333, "Lucy");
+    m.associate(111, "Fred");
+    assert(m.getNumItems() == 3);
+    assert(abs(m.getLoadFactor() - 0.03) < 0.00001);
+    string* s = m.find(333);
+    assert(s != nullptr  &&  *s == "Lucy");
+    
     //cout << encrypt("Please encrypt this message for me!!") << endl;
-    //decrypt("y qook ra bdttook yqkook.");
-    //decrypt("Vxgvab sovi jh pjhk cevc andi ngh iobnxdcjnh cn bdttook jb pnio jpfnicvhc cevh vha nceoi nho cejhy.");
-    //decrypt("Lzdkgd dyrmjls shcg xdggkud fpm xd!!");
-    //decrypt("Trcy oyc koon oz rweelycbb vmobcb, wyogrcn oecyb; hjg ozgcy tc moox bo moya wg grc vmobck koon grwg tc ko yog bcc grc oyc trlvr rwb hccy oecyck zon jb. -Rcmcy Xcmmcn");
-    //decrypt("Jxwpjq qwrla glcu pcx qcn xkvv dw uclw ekarbbckpjwe dq jzw jzkpta jzrj qcn ekep'j ec jzrp dq jzw cpwa qcn eke ec. -Urls Jxrkp");
-    //decrypt("Xjzwq gjz cuvq xz huri arwqvudiy fuk ufjrqoq svquxiy. -Lzjk Nqkkqcy");
+    decrypt("y qook ra bdttook yqkook.");
+    decrypt("Vxgvab sovi jh pjhk cevc andi ngh iobnxdcjnh cn bdttook jb pnio jpfnicvhc cevh vha nceoi nho cejhy.");
+    decrypt("Lzdkgd dyrmjls shcg xdggkud fpm xd!!");
+    decrypt("Trcy oyc koon oz rweelycbb vmobcb, wyogrcn oecyb; hjg ozgcy tc moox bo moya wg grc vmobck koon grwg tc ko yog bcc grc oyc trlvr rwb hccy oecyck zon jb. -Rcmcy Xcmmcn");
+    decrypt("Jxwpjq qwrla glcu pcx qcn xkvv dw uclw ekarbbckpjwe dq jzw jzkpta jzrj qcn ekep'j ec jzrp dq jzw cpwa qcn eke ec. -Urls Jxrkp");
+    decrypt("Xjzwq gjz cuvq xz huri arwqvudiy fuk ufjrqoq svquxiy. -Lzjk Nqkkqcy");
     decrypt("Axevfvu lvnelvp bxqp mvpprjv rgl bvoop Grnxvgkvuj dqupb jvbp buvrbvl be lqggvu.");
 }

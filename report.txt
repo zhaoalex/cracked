@@ -1,0 +1,42 @@
+Alex Zhao
+CS 32, Project 4
+report.txt
+
+1) Known bugs or other problems in any classes
+
+There are no bugs as far as my testing has shown, both through personally testing each class and through using the p4 sanity checker.
+
+2) High-level description of data structures / algorithms for each class's non-trivial ones
+
+For MyHash:
+In MyHash, I had a Node struct containing a key type, a value type, and a pointer to the next node in the linked list. The MyHash class constructs a hash table with a default of 100 buckets, done using a dynamic array of Node pointers. (This makes the m_hashTable variable of type Node**, since it's a pointer to the start of an array of Node pointers.) The MyHash class also contained member variables to keep track of the max load factor, current bucket size, and current numbe of items.
+
+If the load factor would be exceeded when adding a key-value association to the hash table, then reassociate() would run; reassociate() allocates a new table (dynamic array) with double the bucket size and reassociates the preexisting associations to the new buckets in the table. It then destructs every linked list in the hash table, destructs the hash table itself, and sets m_hashTable equal to the new table.
+
+Adding to the table and finding a value in the table both use the hash function so that those functions can run in O(1) time; the hash function takes in the key and returns the bucket value, and we store (or read from) the linked list at that bucket location.
+
+For Tokenizer:
+For Tokenizer, I used a character vector to store the separators for the tokenizer, since it offers O(1) access, which is required for the given time complexities.
+
+I implemented the O(SP) version of tokenize(const string& s), since I didn't have enough time to implement the O(S) version of the function. The function loops through each character in the string exactly once, and for each character, we check if it is a separator or not (by looping through the separator vector); we loop through the string until we hit a separator, then take that substring and put it in the tokens vector. If the only character in that substring was a separator, then we ignore it.
+
+For WordList:
+For WordList, I chose to use two MyHashes: one that maps words to their letter pattern, and one that maps a letter pattern to a vector of its words. I did this because the contains() function had a required runtime of O(1), and having another MyHash was effectively the only way to meet that requirement.
+
+Loading the word list and adding the words to maps was fairly simple. Calculating the pattern for each word was slightly more difficult; I had to use a nested for loop, but since looping through the characters was given as effectively O(1), I think this implementation is fine. For finding the candidates for a given letter pattern, I normalized both strings to be lowercase to make things easier, then iterated through the vector of possible words and checked each character for validity.
+
+For Translator:
+Since using a STL stack wasn't allowed, I chose to use a vector of strings as my stack (especially since inserting at the bottom is O(1)). For my map, since it would always be 26 characters and simply mapped letters to letters, I just used a 26-character-long string, with the index number's corresponding letter as the plaintext (i.e. m_map[0] mapped A to some character, etc.) and initalized to all question marks.
+
+Pushing the mapping involved creating a temporary map (cheap since it's just a string), converting strings to uppercase, and checking separately for inconsistency (including making a bool array to check if two ciphertexts mapped to the same plaintext by setting used characters to true in the array and checking against it). Then I checked if the pairing already existed and skipped that check if it did, and also checked for non-letter characters. Finally, I set the original map equal to the temp map and pushed the new mapping onto the stack. The complexity was technically 2N+2L, which I wasn't very happy about, but it still met the requirements.
+
+Popping the mapping and getting the translation of the cipher were fairly trivial. I normalized everything to uppercase in the map, so I did have to acconut for uppercase and lowercase letters, but otherwise there wasn't much difficulty involved in these functions.
+
+For Decrypter:
+The only "member variable" in Decrypter was the word list, since it stays unchanging throughout the decrypting process. I created a Translator and a Tokenizer in the crack() function, tokenized to a vector of strings, and sent it to my crack helper function along with a vector for the possible decrypted phrases. My helper function took in pointers of the Translator for mapping, Tokenizer for tokenizing, the vector of tokens and possible outcomes, and the cipher text. The base case was effectively having no more candidates for other mappings, since an empty candidate vector meant that there were no more possiblities for more decryption permutations along that recursive path. Otherwise, the function followed the algorithm in the spec.
+
+I did have helper functions to get the index of the string with the most untranslated characters (for step 2 of the algorithm) and to get if the string was fully translated (for step 6 of the algorithm). Those were fairly simple and straightforward to implement.
+
+3) If code satifies big O requirements (and if it doesn't, what that complexity is)
+
+The code should satisfy all big O requirements listed in the spec.

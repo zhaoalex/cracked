@@ -1,6 +1,5 @@
 #include "provided.h"
-#include "MyHash.h" // TODO
-// #include "substituteMyHash.h"
+#include "MyHash.h"
 #include <string>
 #include <vector>
 #include <sstream>

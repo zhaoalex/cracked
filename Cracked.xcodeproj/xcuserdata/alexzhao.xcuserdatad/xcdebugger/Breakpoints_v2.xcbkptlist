@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Cracked/main.cpp"
-            timestampString = "542845554.136807"
+            timestampString = "542868907.66295"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "83"
-            endingLineNumber = "83"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
             landmarkName = "unknown"
             landmarkType = "0">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Cracked/main.cpp"
-            timestampString = "542845554.136883"
+            timestampString = "542868907.663552"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "82"
-            endingLineNumber = "82"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
             landmarkName = "unknown"
             landmarkType = "0">
          </BreakpointContent>
@@ -42,7 +42,71 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Cracked/main.cpp"
-            timestampString = "542845554.136941"
+            timestampString = "542868907.663954"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Cracked/main.cpp"
+            timestampString = "542868907.664489"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Cracked/main.cpp"
+            timestampString = "542868907.665007"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Cracked/main.cpp"
+            timestampString = "542868907.665323"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Cracked/main.cpp"
+            timestampString = "542868907.665609"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "88"
@@ -58,11 +122,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Cracked/main.cpp"
-            timestampString = "542845554.136992"
+            timestampString = "542868907.665966"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "88"
-            endingLineNumber = "88"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
             landmarkName = "unknown"
             landmarkType = "0">
          </BreakpointContent>
@@ -74,77 +138,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Cracked/main.cpp"
-            timestampString = "542845554.137041"
+            timestampString = "542868907.666512"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "88"
-            endingLineNumber = "88"
+            startingLineNumber = "126"
+            endingLineNumber = "126"
             landmarkName = "unknown"
             landmarkType = "0">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Cracked/main.cpp"
-            timestampString = "542845554.137091"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "88"
-            endingLineNumber = "88"
-            landmarkName = "unknown"
-            landmarkType = "0">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Cracked/main.cpp"
-            timestampString = "542845554.13714"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "86"
-            endingLineNumber = "86"
-            landmarkName = "unknown"
-            landmarkType = "0">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Cracked/main.cpp"
-            timestampString = "542845554.13719"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "96"
-            endingLineNumber = "96"
-            landmarkName = "unknown"
-            landmarkType = "0">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Cracked/main.cpp"
-            timestampString = "542845554.137239"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "123"
-            endingLineNumber = "123"
-            landmarkName = "f()"
-            landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -154,11 +154,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Cracked/WordList.cpp"
-            timestampString = "542845554.1373481"
+            timestampString = "542868907.667104"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
             landmarkName = "WordListImpl::loadWordList(string filename)"
             landmarkType = "7">
          </BreakpointContent>
@@ -170,13 +170,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Cracked/MyHash.h"
-            timestampString = "542829247.711549"
+            timestampString = "542868907.667236"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
-            landmarkName = "MyHash(double maxLoadFactor)"
-            landmarkType = "9">
+            startingLineNumber = "248"
+            endingLineNumber = "248">
             <Locations>
                <Location
                   shouldBeEnabled = "No"
@@ -218,13 +216,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Cracked/main.cpp"
-            timestampString = "542845554.137768"
+            timestampString = "542868907.667392"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "134"
-            endingLineNumber = "134"
-            landmarkName = "f()"
-            landmarkType = "9">
+            startingLineNumber = "137"
+            endingLineNumber = "137"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -234,13 +232,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Cracked/main.cpp"
-            timestampString = "542845554.1378371"
+            timestampString = "542868907.667863"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "128"
-            endingLineNumber = "128"
-            landmarkName = "f()"
-            landmarkType = "9">
+            startingLineNumber = "131"
+            endingLineNumber = "131"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -250,13 +248,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Cracked/main.cpp"
-            timestampString = "542845554.1379319"
+            timestampString = "542868907.668182"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "129"
-            endingLineNumber = "129"
-            landmarkName = "f()"
-            landmarkType = "9">
+            startingLineNumber = "132"
+            endingLineNumber = "132"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -266,7 +264,39 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Cracked/main.cpp"
-            timestampString = "542845554.1379859"
+            timestampString = "542868907.668506"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "154"
+            endingLineNumber = "154"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Cracked/main.cpp"
+            timestampString = "542868907.668836"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "152"
+            endingLineNumber = "152"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Cracked/main.cpp"
+            timestampString = "542868907.6691279"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "151"
@@ -282,43 +312,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Cracked/main.cpp"
-            timestampString = "542845554.138036"
+            timestampString = "542868907.669407"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "149"
-            endingLineNumber = "149"
-            landmarkName = "unknown"
-            landmarkType = "0">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Cracked/main.cpp"
-            timestampString = "542845554.138086"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "148"
-            endingLineNumber = "148"
-            landmarkName = "unknown"
-            landmarkType = "0">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Cracked/main.cpp"
-            timestampString = "542845554.138135"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "162"
-            endingLineNumber = "162"
+            startingLineNumber = "165"
+            endingLineNumber = "165"
             landmarkName = "unknown"
             landmarkType = "0">
          </BreakpointContent>
@@ -330,7 +328,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Cracked/Translator.cpp"
-            timestampString = "542845554.138185"
+            timestampString = "542868907.669741"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "31"
@@ -346,7 +344,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Cracked/Translator.cpp"
-            timestampString = "542845554.138236"
+            timestampString = "542868907.669812"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "54"
@@ -362,7 +360,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Cracked/Translator.cpp"
-            timestampString = "542845554.138285"
+            timestampString = "542868907.6698689"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "50"
@@ -378,7 +376,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Cracked/Translator.cpp"
-            timestampString = "542845554.138344"
+            timestampString = "542868907.6699229"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "71"
@@ -394,13 +392,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Cracked/main.cpp"
-            timestampString = "542845554.138394"
+            timestampString = "542868907.6699769"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "122"
-            endingLineNumber = "122"
-            landmarkName = "f()"
-            landmarkType = "9">
+            startingLineNumber = "125"
+            endingLineNumber = "125"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -410,13 +408,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Cracked/main.cpp"
-            timestampString = "542845554.138445"
+            timestampString = "542868907.670458"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "121"
-            endingLineNumber = "121"
-            landmarkName = "f()"
-            landmarkType = "9">
+            startingLineNumber = "124"
+            endingLineNumber = "124"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -426,7 +424,23 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Cracked/WordList.cpp"
-            timestampString = "542845554.138495"
+            timestampString = "542868907.67092"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "WordListImpl::loadWordList(string filename)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Cracked/WordList.cpp"
+            timestampString = "542868907.671024"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "33"
@@ -442,11 +456,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Cracked/WordList.cpp"
-            timestampString = "542845554.138769"
+            timestampString = "542868907.671113"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
             landmarkName = "WordListImpl::loadWordList(string filename)"
             landmarkType = "7">
          </BreakpointContent>
@@ -458,27 +472,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Cracked/WordList.cpp"
-            timestampString = "542845554.13901"
+            timestampString = "542868907.671183"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
-            landmarkName = "WordListImpl::loadWordList(string filename)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Cracked/WordList.cpp"
-            timestampString = "542845554.139256"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
             landmarkName = "WordListImpl::loadWordList(string filename)"
             landmarkType = "7">
          </BreakpointContent>
@@ -490,7 +488,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Cracked/Decrypter.cpp"
-            timestampString = "542845554.139506"
+            timestampString = "542868907.671253"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "37"
@@ -506,7 +504,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Cracked/Translator.cpp"
-            timestampString = "542845554.139703"
+            timestampString = "542868907.6713409"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "32"
@@ -522,12 +520,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Cracked/Decrypter.cpp"
-            timestampString = "542845554.139758"
+            timestampString = "542868907.6713949"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "87"
-            endingLineNumber = "87"
-            landmarkName = "DecrypterImpl::crackHelper(Translator* mapping, Tokenizer* tk, vector&lt;string&gt;* tokens, string ciphertext, set&lt;string&gt;* possibilities)"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "DecrypterImpl::crackHelper(Translator* mapping, Tokenizer* tk, vector&lt;string&gt;* tokens, string ciphertext, vector&lt;string&gt;* possibilities)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -538,7 +536,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Cracked/Translator.cpp"
-            timestampString = "542845554.1398619"
+            timestampString = "542868907.671471"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "60"
@@ -554,12 +552,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Cracked/Decrypter.cpp"
-            timestampString = "542845554.139927"
+            timestampString = "542868907.671519"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "91"
-            endingLineNumber = "91"
-            landmarkName = "DecrypterImpl::crackHelper(Translator* mapping, Tokenizer* tk, vector&lt;string&gt;* tokens, string ciphertext, set&lt;string&gt;* possibilities)"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
+            landmarkName = "DecrypterImpl::crackHelper(Translator* mapping, Tokenizer* tk, vector&lt;string&gt;* tokens, string ciphertext, vector&lt;string&gt;* possibilities)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -570,7 +568,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Cracked/Translator.cpp"
-            timestampString = "542845554.1401041"
+            timestampString = "542868907.671594"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "107"
@@ -586,7 +584,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Cracked/Translator.cpp"
-            timestampString = "542845554.140161"
+            timestampString = "542868907.671641"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "87"
@@ -602,11 +600,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Cracked/Decrypter.cpp"
-            timestampString = "542845554.1402071"
+            timestampString = "542868907.671687"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
             landmarkName = "DecrypterImpl::crack(const string&amp; ciphertext)"
             landmarkType = "7">
          </BreakpointContent>
@@ -614,16 +612,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Cracked/Decrypter.cpp"
-            timestampString = "542845554.140339"
+            timestampString = "542868907.6717891"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
-            landmarkName = "DecrypterImpl::crackHelper(Translator* mapping, Tokenizer* tk, vector&lt;string&gt;* tokens, string ciphertext, set&lt;string&gt;* possibilities)"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "DecrypterImpl::crackHelper(Translator* mapping, Tokenizer* tk, vector&lt;string&gt;* tokens, string ciphertext, vector&lt;string&gt;* possibilities)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -634,12 +632,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Cracked/Decrypter.cpp"
-            timestampString = "542845554.140471"
+            timestampString = "542868907.671905"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "118"
-            endingLineNumber = "118"
-            landmarkName = "DecrypterImpl::crackHelper(Translator* mapping, Tokenizer* tk, vector&lt;string&gt;* tokens, string ciphertext, set&lt;string&gt;* possibilities)"
+            startingLineNumber = "108"
+            endingLineNumber = "108"
+            landmarkName = "DecrypterImpl::crackHelper(Translator* mapping, Tokenizer* tk, vector&lt;string&gt;* tokens, string ciphertext, vector&lt;string&gt;* possibilities)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -650,11 +648,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Cracked/Decrypter.cpp"
-            timestampString = "542845554.140546"
+            timestampString = "542868907.6719739"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "144"
-            endingLineNumber = "144"
+            startingLineNumber = "134"
+            endingLineNumber = "134"
             landmarkName = "DecrypterImpl::getMostUntranslated(Translator* tl, const vector&lt;string&gt;* tokens)"
             landmarkType = "7">
          </BreakpointContent>
@@ -662,17 +660,171 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Cracked/Decrypter.cpp"
-            timestampString = "542845554.140696"
+            timestampString = "542868907.672037"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "78"
-            endingLineNumber = "78"
-            landmarkName = "DecrypterImpl::crackHelper(Translator* mapping, Tokenizer* tk, vector&lt;string&gt;* tokens, string ciphertext, set&lt;string&gt;* possibilities)"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "DecrypterImpl::crackHelper(Translator* mapping, Tokenizer* tk, vector&lt;string&gt;* tokens, string ciphertext, vector&lt;string&gt;* possibilities)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Cracked/MyHash.h"
+            timestampString = "542868907.6720999"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "248"
+            endingLineNumber = "248">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyHash&lt;std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt;, std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; &gt;::MyHash(double)"
+                  moduleName = "Cracked"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alexzhao/Documents/CollegeYear1/Winter18/CS%2032/Cracked/Cracked/MyHash.h"
+                  timestampString = "542858809.1940531"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "35">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyHash&lt;std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt;, std::__1::vector&lt;std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt;, std::__1::allocator&lt;std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; &gt; &gt; &gt;::MyHash(double)"
+                  moduleName = "Cracked"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alexzhao/Documents/CollegeYear1/Winter18/CS%2032/Cracked/Cracked/MyHash.h"
+                  timestampString = "542858809.1984169"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "35">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Cracked/MyHash.h"
+            timestampString = "542868907.672179"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "248"
+            endingLineNumber = "248">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyHash&lt;std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt;, std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; &gt;::MyHash(double)"
+                  moduleName = "Cracked"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alexzhao/Documents/CollegeYear1/Winter18/CS%2032/Cracked/Cracked/MyHash.h"
+                  timestampString = "542858809.206041"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "70"
+                  endingLineNumber = "70"
+                  offsetFromSymbolStart = "162">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyHash&lt;std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt;, std::__1::vector&lt;std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt;, std::__1::allocator&lt;std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; &gt; &gt; &gt;::MyHash(double)"
+                  moduleName = "Cracked"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alexzhao/Documents/CollegeYear1/Winter18/CS%2032/Cracked/Cracked/MyHash.h"
+                  timestampString = "542858809.2123131"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "70"
+                  endingLineNumber = "70"
+                  offsetFromSymbolStart = "162">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Cracked/MyHash.h"
+            timestampString = "542868907.672258"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "248"
+            endingLineNumber = "248">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Cracked/main.cpp"
+            timestampString = "542868907.672312"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "233"
+            endingLineNumber = "233"
+            landmarkName = "main()"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Cracked/main.cpp"
+            timestampString = "542868907.672617"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "229"
+            endingLineNumber = "229"
+            landmarkName = "main()"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Cracked/main.cpp"
+            timestampString = "542868907.672906"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "228"
+            endingLineNumber = "228"
+            landmarkName = "main()"
+            landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

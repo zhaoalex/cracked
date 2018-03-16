@@ -27,6 +27,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1526AB1F205B79E500329AEA /* MyHash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyHash.h; sourceTree = "<group>"; };
 		15A4C67220587F450046BFF1 /* Cracked */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Cracked; sourceTree = BUILT_PRODUCTS_DIR; };
 		15A4C67520587F450046BFF1 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		15A4C67C20587FE50046BFF1 /* Decrypter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Decrypter.cpp; sourceTree = "<group>"; };
@@ -35,7 +36,6 @@
 		15A4C68020587FE50046BFF1 /* Translator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Translator.cpp; sourceTree = "<group>"; };
 		15A4C68220587FE50046BFF1 /* WordList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WordList.cpp; sourceTree = "<group>"; };
 		15A4C68320587FE50046BFF1 /* wordlist.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wordlist.txt; sourceTree = "<group>"; };
-		15A4C6882058D4660046BFF1 /* MyHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyHash.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +68,6 @@
 		15A4C67420587F450046BFF1 /* Cracked */ = {
 			isa = PBXGroup;
 			children = (
-				15A4C6882058D4660046BFF1 /* MyHash.h */,
 				15A4C67C20587FE50046BFF1 /* Decrypter.cpp */,
 				15A4C67D20587FE50046BFF1 /* provided.h */,
 				15A4C67F20587FE50046BFF1 /* Tokenizer.cpp */,
@@ -76,6 +75,7 @@
 				15A4C68220587FE50046BFF1 /* WordList.cpp */,
 				15A4C68320587FE50046BFF1 /* wordlist.txt */,
 				15A4C67520587F450046BFF1 /* main.cpp */,
+				1526AB1F205B79E500329AEA /* MyHash.h */,
 			);
 			path = Cracked;
 			sourceTree = "<group>";
